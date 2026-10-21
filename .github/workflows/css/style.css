@@ -1,0 +1,1186 @@
+
+/* PAWS & HOMES ESTILOS GERAIS */
+
+:root {
+    --vinho: #420b0b;
+    --laranja: #f26536;
+    --laranja-hover: #d94e25;
+    --bege: #faf5ee;
+    --bege-claro: #fffaf5;
+    --texto: #66534d;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* MENU DE NAVEGAÇÃO */
+
+.navbar-paws {
+    position: relative;
+    z-index: 1000;
+    width: 90%;
+    margin: 15px auto 0;
+    padding: 10px 25px;
+    background-color: rgba(255, 248, 239, 0.96);
+    border-radius: 18px;
+}
+
+/* Sobreposição do menu apenas na HOME */
+
+.pagina-inicio .navbar-paws {
+    margin-bottom: -90px;
+}
+
+/* LOGO */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-weight: 700;
+    color: var(--vinho) !important;
+}
+
+.logo-paws {
+    width: 190px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+/* LINKS */
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--vinho) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--laranja) !important;
+}
+
+/* PÁGINA ATIVA */
+
+.navbar-nav .nav-link.active {
+    color: var(--vinho) !important;
+    font-weight: 600;
+    border-bottom: 3px solid var(--vinho);
+    padding-bottom: 5px;
+}
+
+
+/* BANNER HOME - COMPUTADOR */
+
+.banner-principal {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* BANNER HOME - CELULAR */
+
+@media (max-width: 767px) {
+    .banner-principal {
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* HOME - APRESENTAÇÃO */
+
+.apresentacao {
+    width: 100%;
+    background-color: #faf8f5;
+    text-align: center;
+    padding: 25px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao h1 {
+    color: #392f2c;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 5px;
+}
+
+.apresentacao p {
+    color: #554844;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 12px;
+}
+
+/* BOTÃO DE ADOÇÃO */
+
+.btn-adocao {
+    display: inline-block;
+    background-color: var(--laranja);
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-adocao:hover {
+    background-color: var(--laranja-hover);
+    color: #ffffff;
+}
+
+/* PATINHAS */
+
+.patinhas {
+    font-size: 16px;
+    margin-top: 12px;
+    line-height: 1;
+}
+
+
+/* PÁGINA SOBRE*/
+
+.pagina-sobre {
+    background-color: var(--bege);
+    color: var(--vinho);
+}
+
+/* ÁREA PRINCIPAL */
+
+.pagina-sobre main {
+    max-width: 1200px;
+}
+
+/* TÍTULO PRINCIPAL */
+
+.pagina-sobre h1 {
+    color: var(--vinho);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* TÍTULOS SECUNDÁRIOS */
+
+.pagina-sobre h2 {
+    color: var(--vinho);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* PARÁGRAFOS */
+
+.pagina-sobre main p {
+    color: var(--texto);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* FOTOGRAFIA */
+
+.foto-sobre {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(66, 11, 11, 0.10);
+}
+
+/* CARDS DE MISSÃO E PROPÓSITO */
+
+.pagina-sobre .card-sobre {
+    background-color: var(--bege-claro);
+    padding: 35px;
+    border-radius: 22px;
+    border: 1px solid #f0e1d2;
+}
+
+/* BOTÃO */
+
+.pagina-sobre .btn-warning {
+    background-color: var(--laranja);
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 14px 35px;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.pagina-sobre .btn-warning:hover {
+    background-color: var(--laranja-hover);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* PÁGINA GALERIA*/
+
+.pagina-galeria {
+    background-color: var(--bege);
+}
+
+/* INTRODUÇÃO */
+
+.galeria-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 55px 20px 45px;
+    text-align: center;
+}
+
+/* ETIQUETA SUPERIOR */
+
+.galeria-etiqueta {
+    display: block;
+    color: #8b5e4b;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* TÍTULO */
+
+.galeria-intro h1 {
+    color: var(--vinho);
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+/* DESCRIÇÃO */
+
+.galeria-descricao {
+    color: #795d51;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* ÁREA DOS CARDS */
+.galeria-pets {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 24px 90px;
+    box-sizing: border-box;
+}
+
+/* CENTRALIZAÇÃO */
+.galeria-pets .row {
+    justify-content: center;
+}
+
+/* TAMANHO DOS CARDS */
+.galeria-pets .card-pet {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+}
+
+/* celular */
+@media (max-width: 767px) {
+    .galeria-pets{
+        padding: 25px 15px 60px;
+    }
+}
+
+/* CARDS */
+
+.card-pet {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card-pet:hover {
+    transform: translateY(-6px);
+}
+
+/* IMAGENS */
+.card-pet .card-img-top {
+     width: 100%;
+    height: 450px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #e9c7a4;
+    display: block;
+}
+
+/* CONTEÚDO DOS CARDS */
+
+.card-pet .card-body {
+    padding: 25px;
+}
+
+.card-pet h2 {
+    color: var(--vinho);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.card-pet p {
+    color: #795d51;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* RESPONSIVIDADE - TABLET E CELULAR */
+
+@media (max-width: 991px) {
+
+    /* MENU */
+
+    .navbar-paws {
+        width: 94%;
+        margin: 10px auto 0;
+        padding: 10px 15px;
+    }
+
+    .pagina-inicio .navbar-paws {
+        margin-bottom: 0;
+    }
+
+    .navbar-nav {
+        gap: 5px;
+    }
+
+    /* GALERIA */
+
+    .galeria-intro {
+        padding: 55px 20px 35px;
+    }
+
+    .galeria-pets {
+        padding: 25px 20px 60px;
+    }
+}
+
+
+/* RESPONSIVIDADE - CELULAR */
+
+@media (max-width: 767px) {
+
+    /* LOGO */
+
+    .logo-paws {
+        width: 150px;
+        height: 55px;
+    }
+
+    /* HOME */
+
+    .apresentacao {
+        padding: 25px 15px;
+    }
+
+    .apresentacao h1 {
+        font-size: 28px;
+    }
+
+    .apresentacao p {
+        font-size: 16px;
+    }
+
+    /* SOBRE */
+
+    .pagina-sobre h2 {
+        font-size: 1.6rem;
+    }
+
+    .foto-sobre {
+        height: 260px;
+    }
+
+    .pagina-sobre .cards-sobre > div {
+        padding: 24px;
+    }
+
+    /* GALERIA */
+
+    .galeria-intro h1 {
+        font-size: 32px;
+    }
+
+    .galeria-etiqueta {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .galeria-descricao {
+        font-size: 16px;
+    }
+
+    .card-pet img {
+        height: 350px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .card-pet .card-body {
+        padding: 22px;
+    }
+
+    
+/* BOTÕES DA GALERIA */
+
+.btn-ver-pets {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    padding: 14px 24px;
+
+    background-color: #420b0b;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+
+
+.btn-ver-pets:hover {
+    background-color: #f26536;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.btn-ver-pets:focus-visible {
+    outline: 3px solid #f26536;
+    outline-offset: 3px;
+}
+
+}
+
+/* PÁGINA DADOS - PAWS & HOMES */
+
+.pagina-dados {
+    background-color: #faf5ee;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* MENU */
+.pagina-dados .navbar-paws {
+    margin: 15px auto 0;
+}
+
+/* INTRODUÇÃO */
+.dados-intro {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 75px 20px 65px;
+    text-align: center;
+}
+
+.dados-etiqueta {
+    color: #8b5e4b;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.dados-intro h1 {
+    color: #420b0b;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.dados-descricao {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #795d51;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* CARDS */
+.dados-estatisticas {
+    padding-bottom: 100px;
+}
+
+.card-dado {
+    height: 100%;
+    padding: 40px 30px;
+    background-color: #fffaf5;
+    border: 1px solid #f0e1d2;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(66, 11, 11, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card-dado:hover {
+    transform: translateY(-6px);
+}
+
+.dado-icone {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.card-dado h2 {
+    color: #420b0b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card-dado p {
+    color: #795d51;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* CONSCIENTIZAÇÃO */
+.dados-conscientizacao {
+    background-color: #f3e6d8;
+    padding: 80px 20px;
+}
+
+.dados-conscientizacao h2 {
+    color: #420b0b;
+    font-size: clamp(26px, 3vw, 38px);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dados-conscientizacao p {
+    color: #795d51;
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 767px) {
+
+    .pagina-dados .navbar-paws {
+        margin: 10px auto 0;
+    }
+
+    .dados-intro {
+        padding: 55px 20px 45px;
+    }
+
+    .dados-etiqueta {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .dados-descricao {
+        font-size: 16px;
+    }
+
+    .dados-estatisticas {
+        padding-top: 20px;
+        padding-bottom: 90px;
+    }
+
+    .card-dado {
+        background-color: #fffaf5;
+        border: 1px solid #f0e1d2;
+        border-radius: 24px;
+        padding: 38px 25px;
+        text-align: center;
+        height: 100%;
+        box-shadow: 0 10px 30px rgba(66, 11, 11, 0.05);
+        transition: transform 0.3s ease;
+    }
+
+    .card-dado:hover {
+    transform: translateY(-6px);
+}
+
+.card-dado i {
+    display: block;
+    font-size: 38px;
+    color: #8b3e35;
+    margin-bottom: 20px;
+}
+
+.card-dado h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(30px, 3vw, 42px);
+    font-weight: 700;
+    color: #420b0b;
+    margin-bottom: 12px;
+}
+
+.card-dado h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #420b0b;
+    margin-bottom: 18px;
+}
+
+.card-dado p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #795d51;
+    margin-bottom: 20px;
+}
+
+.card-dado span {
+    font-size: 12px;
+    color: #94796e;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 767px) {
+    .dados-estatisticas {
+        padding: 15px 20px 60px;
+    }
+
+    .card-dado {
+        padding: 30px 22px;
+    }
+
+    .card-dado h2 {
+        font-size: 34px;
+    }
+}
+
+    .dados-conscientizacao {
+        padding: 60px 20px;
+    }
+}
+
+/* GRÁFICO - PÁGINA DADOS */
+
+.secao-grafico {
+    padding: 20px 20px 100px;
+    background-color: #faf5ee;
+}
+
+.grafico-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.grafico-intro h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #420b0b;
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.grafico-intro > p:last-child {
+    color: #795d51;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.grafico-card {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: #fffaf5;
+    border: 1px solid #f0e1d2;
+    border-radius: 24px;
+    padding: 45px;
+    box-shadow: 0 10px 30px rgba(66, 11, 11, 0.05);
+}
+
+.grafico-container {
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+
+.grafico-observacao {
+    color: #795d51;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 25px 0 10px;
+}
+
+.grafico-fonte {
+    color: #94796e;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .secao-grafico {
+        padding: 10px 15px 65px;
+    }
+
+    .grafico-card {
+        padding: 25px 15px;
+    }
+
+    .grafico-container {
+        height: 300px;
+    }
+
+    .grafico-intro {
+        margin-bottom: 25px;
+    }
+}
+
+
+/* PÁGINA CONTATO - PAWS & HOMES*/
+
+.pagina-contato {
+    background-color: #faf5ee;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.pagina-contato .navbar-paws {
+    margin: 15px auto 0;
+}
+
+/* INTRODUÇÃO */
+
+.contato-intro {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 45px 20px 50px;
+    text-align: center;
+}
+
+.contato-etiqueta {
+    color: #8b5e4b;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.contato-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #420b0b;
+    font-size: clamp(34px, 4vw, 56px);
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.contato-descricao {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #795d51;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* CONTEÚDO */
+
+.contato-conteudo {
+    padding-bottom: 100px;
+}
+
+/* CARD ESQUERDO */
+
+.contato-informacoes {
+    height: 100%;
+    padding: 45px 35px;
+    background-color: #f3e6d8;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato-coracao {
+    font-size: 45px;
+    color: #f26536;
+    margin-bottom: 30px;
+}
+
+.contato-informacoes h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(25px, 2.5vw, 35px);
+    font-weight: 700;
+    color: #420b0b;
+    line-height: 1.3;
+    margin-bottom: 22px;
+}
+
+.contato-informacoes p {
+    color: #795d51;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.contato-destaque {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    color: #420b0b;
+    font-weight: 700;
+}
+
+.contato-destaque i {
+    color: #f26536;
+    font-size: 25px;
+}
+
+/* FORMULÁRIO */
+
+.contato-formulario {
+    background-color: #fffaf5;
+    border: 1px solid #f0e1d2;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(66, 11, 11, 0.05);
+}
+
+.contato-formulario h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    color: #420b0b;
+    margin-bottom: 30px;
+}
+
+.contato-formulario .form-label {
+    font-weight: 600;
+    color: #420b0b;
+    margin-bottom: 9px;
+}
+
+.contato-formulario .form-control,
+.contato-formulario .form-select {
+    background-color: #ffffff;
+    border: 1px solid #e6d7ca;
+    border-radius: 12px;
+    padding: 13px 15px;
+    color: #420b0b;
+    font-size: 15px;
+}
+
+.contato-formulario .form-control:focus,
+.contato-formulario .form-select:focus {
+    border-color: #f26536;
+    box-shadow: 0 0 0 3px rgba(242, 101, 54, 0.12);
+}
+
+.btn-enviar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #420b0b;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 28px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #f26536;
+    transform: translateY(-2px);
+}
+
+.contato-aviso {
+    color: #795d51;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* CELULAR */
+
+@media (max-width: 767px) {
+    .pagina-contato .navbar-paws {
+        margin: 10px auto 0;
+    }
+
+    .contato-intro {
+        padding: 50px 20px 35px;
+    }
+
+    .contato-descricao {
+        font-size: 16px;
+    }
+
+    .contato-conteudo {
+        padding-bottom: 60px;
+    }
+
+    .contato-informacoes {
+        padding: 35px 28px;
+    }
+
+    .contato-formulario {
+        padding: 30px 22px;
+    }
+
+    .btn-enviar {
+        width: 100%;
+    }
+}
+
+
+/* BOTÕES DOS PETS - GALERIA */
+
+.btn-ver-pets {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 24px;
+    background-color: #420b0b;
+    color: #ffffff !important;
+    border-radius: 12px;
+    text-decoration: none !important;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.btn-ver-pets:hover {
+    background-color: #f26536;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+
+/* PÁGINA DE ADOÇÃO - CÃES */
+
+.pets-intro {
+    padding: 90px 20px 55px;
+}
+
+.pets-etiqueta {
+    color: #8b5e4b;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.pets-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #420b0b;
+    font-size: clamp(32px, 4vw, 54px);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.pets-descricao {
+    color: #795d51;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.pets-disponiveis {
+    padding-bottom: 90px;
+}
+
+.pet-adocao {
+    height: 100%;
+    background: #fffaf5;
+    border: 1px solid #f0ded0;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(66, 11, 11, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.pet-adocao:hover {
+    transform: translateY(-6px);
+}
+
+.pet-adocao img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.pet-info {
+    padding: 24px;
+}
+
+.pet-info h2 {
+    color: #420b0b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.pet-detalhes {
+    color: #f26536 !important;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.pet-info p {
+    color: #795d51;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.btn-adotar {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 20px;
+    background: #420b0b;
+    color: #fff !important;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none !important;
+    transition: 0.3s ease;
+}
+
+.btn-adotar:hover {
+    background: #f26536;
+    color: #fff !important;
+}
+
+.aviso-demonstracao {
+    margin-top: 35px;
+    color: #795d51;
+    font-size: 13px;
+}
+
+@media (max-width: 767px) {
+    .pets-intro {
+        padding: 55px 20px 35px;
+    }
+
+    .pet-adocao img {
+        height: 340px;
+    }
+}
+
+/* GALERIA DE GATINHOS */
+
+.pagina-galeria .pets-adocao {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.pagina-galeria .card-adocao {
+    background-color: #fffaf5;
+    border: 1px solid #f0dfcf;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(66, 11, 11, 0.06);
+}
+
+.pagina-galeria .card-adocao img {
+    display: block;
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pagina-galeria .card-adocao-conteudo {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.pagina-galeria .card-adocao h2 {
+    margin: 0 0 10px;
+}
+
+.pagina-galeria .pet-info {
+    margin: 0 0 20px;
+    color: #f26536;
+    font-weight: 600;
+}
+
+.pagina-galeria .pet-descricao {
+    margin: 0 0 25px;
+    flex-grow: 1;
+}
+
+.pagina-galeria .btn-adotar {
+    margin-top: auto;
+}
+
+.pagina-galeria .btn-adotar:hover {
+    background-color: #f26536;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .pagina-galeria .card-adocao img {
+        height: 350px;
+    }
+}
+
+
+/* Accordion - Paws & Homes */
+
+.accordion-button:not(.collapsed) {
+    background-color: #f5e8dc;
+    color: #420b0b;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #f0dfcf;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: grayscale(1);
+}

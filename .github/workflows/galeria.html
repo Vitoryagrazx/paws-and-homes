@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galeria | Paws & Homes</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Conexão com o CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="pagina-galeria">
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg navbar-paws">
+        <div class="container-fluid">
+
+            <a href="index.html" class="navbar-brand">
+                <img src="image/Logo-Paws-&-Homes.png" alt="Paws & Homes" class="logo-paws">
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPaws"
+                aria-controls="menuPaws"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menuPaws">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeria.html" class="nav-link active" aria-current="page">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dados.html">Dados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <section class="galeria-intro container text-center">
+
+    <p class="galeria-etiqueta">
+        CONHEÇA NOSSOS AMIGUINHOS 🐾
+    </p>
+
+    <h1>Pequenas patas, grandes amores.</h1>
+
+    <p class="galeria-descricao">
+        Cada olhar carrega uma história.
+        Conheça os animais que esperam
+        por uma oportunidade de receber amor.
+    </p>
+
+</section>
+
+<section class="galeria-pets container">
+    
+    <div class="row justify-content-center g-4">
+
+    <!-- CARD DOS CÃES -->
+    <div class="col-md-5">
+        <div class="card card-pet">
+            <img src="image/cachorro-galeria.png"
+                 class="card-img-top"
+                 alt="Cachorro">
+
+            <div class="card-body">
+                <h2>Nossos cães</h2>
+                <p>Companheiros cheios de amor!</p>
+
+                <a href="caes.html" class="btn-ver-pets">
+                    Ver cachorrinhos disponíveis →
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD DOS GATOS -->
+    <div class="col-md-5">
+        <div class="card card-pet">
+            <img src="image/gato-galeria.png"
+                 class="card-img-top"
+                 alt="Gato">
+
+            <div class="card-body">
+                <h2>Nossos gatos</h2>
+                <p>Pequenos cheios de personalidade!</p>
+
+                <a href="gatos.html" class="btn-ver-pets">
+                    Ver gatinhos disponíveis →
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

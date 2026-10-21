@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre Nós | Paws & Homes</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Conexão com o CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="pagina-sobre">
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg navbar-paws">
+        <div class="container-fluid">
+
+            <a href="index.html" class="navbar-brand">
+                <img src="image/Logo-Paws-&-Homes.png" alt="Paws & Homes" class="logo-paws">
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPaws"
+                aria-controls="menuPaws"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menuPaws">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre.html" class="nav-link active" aria-current="page">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dados.html">Dados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container py-5 mt-5">
+
+        <section class="text-center mb-5">
+            <p class="text-uppercase">Nossa história 🐾</p>
+            <h1>Muito mais que adoção, uma nova história.</h1>
+            <p>
+                Acreditamos que todo animal merece amor,
+                cuidado e um lugar para chamar de lar.
+            </p>
+        </section>
+
+        <section class="row align-items-center g-4 mb-5">
+            <div class="col-md-6">
+                <h2>Quem somos?</h2>
+                <p>
+                    O Paws & Homes é um projeto dedicado
+                    à conscientização sobre a adoção responsável
+                    de cães e gatos.
+                </p>
+                <p>
+                    Nosso objetivo é mostrar como a adoção
+                    pode transformar a vida dos animais
+                    e das famílias que os acolhem.
+                </p>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <img src="image/gato-e-cachorro-juntos-sentados.png"alt="Cachorro e gato juntos" class="img-fluid foto-sobre">
+            </div>
+        </section>
+
+        <section class="row g-4 text-center mb-5 cards-sobre">
+             <div class="col-md-6">
+        <div class="card-sobre h-100">
+            <h2>Nossa missão</h2>
+            <p>
+                Incentivar a adoção responsável e
+                promover o respeito e o bem-estar animal.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card-sobre h-100">
+            <h2>Nosso propósito</h2>
+            <p>
+                Inspirar pessoas a oferecerem uma nova
+                oportunidade aos animais que precisam de um lar.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+         <!-- ACCORDION: perguntas frequentes sobre adoção responsável -->
+        <section class="mb-5" aria-labelledby="titulo-duvidas">
+            <div class="text-center mb-4">
+                <p class="text-uppercase" style="color:#f26536;font-weight:600;">ADOÇÃO RESPONSÁVEL</p>
+                <h2 id="titulo-duvidas" style="color:#420b0b;">Dúvidas frequentes 🐾</h2>
+                <p>Alguns cuidados importantes antes de receber um novo amigo.</p>
+            </div>
+            <div class="accordion" id="faqAdocao">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="perguntaUm">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#respostaUm" aria-expanded="true" aria-controls="respostaUm">O que devo considerar antes de adotar?</button>
+                    </h3>
+                    <div id="respostaUm" class="accordion-collapse collapse show" aria-labelledby="perguntaUm" data-bs-parent="#faqAdocao">
+                        <div class="accordion-body">Pense no tempo disponível, no espaço da casa e nos custos de alimentação, cuidados veterinários e bem-estar ao longo da vida do animal.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="perguntaDois">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#respostaDois" aria-expanded="false" aria-controls="respostaDois">Como preparar a casa para um pet?</button>
+                    </h3>
+                    <div id="respostaDois" class="accordion-collapse collapse" aria-labelledby="perguntaDois" data-bs-parent="#faqAdocao">
+                        <div class="accordion-body">Organize um cantinho seguro para descanso, disponibilize água fresca e alimentação adequada e mantenha produtos perigosos fora do alcance.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="perguntaTres">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#respostaTres" aria-expanded="false" aria-controls="respostaTres">Os animais mostrados no site estão disponíveis para adoção?</button>
+                    </h3>
+                    <div id="respostaTres" class="accordion-collapse collapse" aria-labelledby="perguntaTres" data-bs-parent="#faqAdocao">
+                        <div class="accordion-body">Não. Os perfis apresentados no Paws & Homes são ilustrativos e foram criados para demonstrar o projeto acadêmico.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h2>Uma nova história começa com você!</h2>
+            <p>Conheça os animais e descubra o poder da adoção.</p>
+            <a href="galeria.html" class="btn btn-warning rounded-pill px-4 py-3">
+                Conheça nossos pets →
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
