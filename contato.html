@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | Paws & Homes</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-contato">
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-paws">
+        <div class="container-fluid">
+
+            <a href="index.html" class="navbar-brand">
+                <img src="image/Logo-Paws-&-Homes.png"
+                     alt="Paws & Homes"
+                     class="logo-paws">
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPaws"
+                    aria-controls="menuPaws"
+                    aria-expanded="false"
+                    aria-label="Abrir menu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end"
+                 id="menuPaws">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="galeria.html" class="nav-link">Galeria</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="dados.html" class="nav-link">Dados</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contato.html"
+                           class="nav-link active"
+                           aria-current="page">Contato</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- INTRODUÇÃO -->
+        <section class="contato-intro">
+            <p class="contato-etiqueta">FALE COM A GENTE 🐾</p>
+
+            <h1>Vamos conversar?</h1>
+
+            <p class="contato-descricao">
+                Tem alguma dúvida sobre adoção ou quer
+                saber mais sobre o projeto?
+                Estamos aqui para ajudar.
+            </p>
+        </section>
+
+        <!-- CONTEÚDO -->
+        <section class="container contato-conteudo">
+            <div class="row g-4 align-items-stretch">
+
+                <!-- LADO ESQUERDO -->
+                <div class="col-12 col-lg-5">
+
+                    <div class="contato-informacoes">
+
+                        <i class="bi bi-heart-fill contato-coracao"></i>
+
+                        <h2>
+                            Toda história começa
+                            com um contato.
+                        </h2>
+
+                        <p>
+                            Quer conhecer nossos amiguinhos
+                            ou entender mais sobre adoção
+                            responsável? Envie sua mensagem!
+                        </p>
+
+                        <div class="contato-destaque">
+                            <i class="bi bi-house-heart"></i>
+                            <span>Adote com amor.</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- FORMULÁRIO -->
+                <div class="col-12 col-lg-7">
+
+                    <div class="contato-formulario">
+
+                        <h2>Envie sua mensagem</h2>
+
+                        <form id="formContato">
+
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">
+                                    Nome completo
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       id="nome"
+                                       name="nome"
+                                       placeholder="Digite seu nome"
+                                       autocomplete="name"
+                                       required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    E-mail
+                                </label>
+
+                                <input type="email"
+                                       class="form-control"
+                                       id="email"
+                                       name="email"
+                                       placeholder="Digite seu e-mail"
+                                       autocomplete="email"
+                                       required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="assunto" class="form-label">
+                                    Assunto
+                                </label>
+
+                                <select class="form-select"
+                                        id="assunto"
+                                        name="assunto"
+                                        required>
+
+                                    <option value="" selected disabled>
+                                        Selecione um assunto
+                                    </option>
+
+                                    <option value="Adocao">
+                                        Quero adotar
+                                    </option>
+
+                                    <option value="Duvidas">
+                                        Dúvidas sobre adoção
+                                    </option>
+
+                                    <option value="Projeto">
+                                        Sobre o projeto
+                                    </option>
+
+                                    <option value="Outros">
+                                        Outros assuntos
+                                    </option>
+
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="mensagem" class="form-label">
+                                    Mensagem
+                                </label>
+
+                                <textarea class="form-control"
+                                          id="mensagem"
+                                          name="mensagem"
+                                          rows="5"
+                                          placeholder="Escreva sua mensagem..."
+                                          required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-enviar">
+                                Enviar mensagem
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+
+                            <p id="avisoContato"
+                               class="contato-aviso mt-3"
+                               role="status"
+                               aria-live="polite"></p>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const formulario = document.getElementById('formContato');
+        const aviso = document.getElementById('avisoContato');
+
+        formulario.addEventListener('submit', function(evento) {
+            evento.preventDefault();
+
+            if (!formulario.checkValidity()) {
+                formulario.reportValidity();
+                return;
+            }
+
+            aviso.textContent =
+                'Formulário validado! Esta é uma demonstração. ' +
+                'O envio de mensagens ainda não está configurado.';
+        });
+    </script>
+
+</body>
+</html>
